@@ -4,7 +4,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 
 url_LanguageTranslator = 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/5d3a4734-3137-4ef5-8cb2-f10fea7be5d3'
-LanguageTranslator_APIKey = 'Vcn5u8KiJANCquGUJ6XvJJnzSh52qivwUkw9ckOWFMxu'
+LanguageTranslator_APIKey = '___________'
 version_LanguageTranslator = '2018-05-01'
 
 authenticator = IAMAuthenticator(LanguageTranslator_APIKey)
@@ -23,4 +23,3 @@ translationResponse = LanguageTranslator.translate(\
 translation = translationResponse.get_result()
 Brazil_translation = translation['translations'][0]['translation']
 print(f'Texto traduzido: {Brazil_translation}') 
-
